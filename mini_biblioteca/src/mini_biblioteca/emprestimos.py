@@ -9,5 +9,9 @@ class Emprestimo:
         if not livro.disponivel:
             raise ValueError("Livro indisponível para empréstimo")
 
-        self.ativo: bool = True
-        self.livro.disponivel: bool = False
+        self.ativo = True
+        self.livro.disponivel = False
+
+    def devolver(self):
+        self.ativo = False
+        self.livro.disponivel = True
