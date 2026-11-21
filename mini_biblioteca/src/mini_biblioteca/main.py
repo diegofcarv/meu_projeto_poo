@@ -23,11 +23,15 @@ print(
 print("APÓS REALIZAR O EMPRÉSTIMO")
 emprestimo1 = Emprestimo(usuario1, livro1)
 
+print(f"Usuário que recebeu: {usuario1.nome}")
+print(f"Livro emprestado: {livro1.titulo}")
 print(f"Livro disponível: {livro1.disponivel}")
 print(f"Empréstimo ativo: {emprestimo1.ativo}")
 
 print("APÓS REALIZAR A DEVOLUÇÃO")
 emprestimo1.devolver()
 
+print(f"Usuário que devolveu: {usuario1.nome}")
+print(f"Livro devolvido: {livro1.titulo}")
 print(f"Livro disponível: {livro1.disponivel}")
 print(f"Empréstimo ativo: {emprestimo1.ativo}")
