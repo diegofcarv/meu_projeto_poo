@@ -12,7 +12,21 @@ livro1 = Livro(
     codigo = "L001"
 )
 
+print("ESTADO INICIAL DO LIVRO")
+print(
+    f"Título: {livro1.titulo}\n", 
+    f"Autor: {livro1.autor}\n", 
+    f"Código do livro: {livro1.codigo}\n",
+    f"Disponível: {livro1.disponivel}"
+)
+
+print("APÓS REALIZAR O EMPRÉSTIMO")
 emprestimo1 = Emprestimo(usuario1, livro1)
+
+print(f"Livro disponível: {livro1.disponivel}")
+print(f"Empréstimo ativo: {emprestimo1.ativo}")
+
+print("APÓS REALIZAR A DEVOLUÇÃO")
 emprestimo1.devolver()
 
 print(f"Livro disponível: {livro1.disponivel}")
