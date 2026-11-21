@@ -4,6 +4,3 @@ class Livro:
         self.autor = autor
         self.codigo = codigo
         self.disponivel: bool = True
-
-livro1 = Livro("Dom Casmurro", "Machado de Assis", "L001")
-livro2 = Livro("O Cortiço", "Aloísio Azevedo", "L002")
