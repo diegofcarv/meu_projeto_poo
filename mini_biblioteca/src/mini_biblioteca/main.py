@@ -14,3 +14,6 @@ livro1 = Livro(
 
 emprestimo1 = Emprestimo(usuario1, livro1)
 emprestimo1.devolver()
+
+print(f"Livro disponível: {livro1.disponivel}")
+print(f"Empréstimo ativo: {emprestimo1.ativo}")
