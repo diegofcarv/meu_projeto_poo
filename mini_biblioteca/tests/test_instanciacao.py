@@ -15,3 +15,15 @@ def test_criacao_usuario():
 
     assert usuario.nome == "Danilo"
     assert usuario.id_usuario == "U001"
+
+def test_criacao_emprestimo():
+    usuario = Usuario("Danilo", "U001")
+    livro = Livro("Capitães de Areia", "Jorge Amado", "L001")
+
+    emprestimo = Emprestimo(usuario, livro)
+
+    assert emprestimo.usuario is usuario
+    assert emprestimo.livro is livro
+    assert emprestimo.ativo is True
+    assert livro.disponivel is False
+
