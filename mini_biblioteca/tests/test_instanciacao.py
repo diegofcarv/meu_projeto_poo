@@ -26,4 +26,3 @@ def test_criacao_emprestimo():
     assert emprestimo.livro is livro
     assert emprestimo.ativo is True
     assert livro.disponivel is False
-
